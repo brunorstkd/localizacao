@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
+<style>
+  div {
+    display: flex;
+    text-align: center;
+    font-size: 30px
+  }
+ 
+  </style>
+<div class="caixa">  
 <p id="demo">Clique no botão para receber as coordenadas:</p>
 <button onclick="getLocation()">Clique Aqui</button>
+
+<div>
 <script>
 var x=document.getElementById("demo");
 function getLocation()
@@ -35,6 +46,8 @@ function showError(error)
       break;
     }
   }
+  
+  
 </script>
 </body>
 </html>
